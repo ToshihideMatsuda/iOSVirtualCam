@@ -20,6 +20,8 @@
 	<string>1</string>
 	<key>NSPrincipalClass</key>
 	<string></string>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
 	<key>CFPlugInFactories</key>
 	<dict>
 		<key>0F54E3D4-7188-6E77-E093-69A9D81863E7</key>

@@ -87,6 +87,7 @@ class Stream: Object {
     ]
 
     func start() {
+        log("start stream")
         timer.resume()
         videoComposer?.startRunning()
     }

@@ -27,20 +27,25 @@ class VideoComposer: NSObject, AVCaptureVideoDataOutputSampleBufferDelegate {
     }
 
     func startRunning() {
+        log("VideoComposer:startRunning")
         cameraCapture.output.setSampleBufferDelegate(self, queue: .main)
         cameraCapture.startRunning()
     }
 
     func stopRunning() {
+        log("VideoComposer:stopRunning")
         settingsTimer?.invalidate()
         settingsTimer = nil
         cameraCapture.stopRunning()
     }
 
     func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
+        log("VideoComposer:captureOutput")
         if output == cameraCapture.output {
+            log("VideoComposer:captureOutput1")
 
             guard let imageBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else { return }
+            log("VideoComposer:captureOutput2")
             let cameraImage = CIImage(cvImageBuffer: imageBuffer)
 
             var pixelBuffer: CVPixelBuffer?
