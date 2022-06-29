@@ -2,7 +2,7 @@ import Foundation
 
 class Stream: Object {
     var objectID: CMIOObjectID = 0
-    let name = "VirtualCameraSample"
+    let name = "iOSVirtualCam"
     let width = 1280
     let height = 720
     let frameRate = 30
@@ -39,7 +39,7 @@ class Stream: Object {
 
         let error = CMIOStreamClockCreate(
             kCFAllocatorDefault,
-            "VirtualCameraSample clock" as CFString,
+            "iOSVirtualCam clock" as CFString,
             Unmanaged.passUnretained(self).toOpaque(),
             CMTimeMake(value: 1, timescale: 10),
             100, 10,

@@ -20,8 +20,6 @@
 		D2CF9809286C1D8800C251A2 /* VideoComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF97FD286C1D8800C251A2 /* VideoComposer.swift */; };
 		D2CF980A286C1D8800C251A2 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF97FE286C1D8800C251A2 /* Log.swift */; };
 		D2CF980B286C1D8800C251A2 /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF97FF286C1D8800C251A2 /* Stream.swift */; };
-		D2CF980E286C282B00C251A2 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF980C286C282B00C251A2 /* Config.swift */; };
-		D2CF980F286C282B00C251A2 /* SettingsPasteboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF980D286C282B00C251A2 /* SettingsPasteboard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,8 +38,6 @@
 		D2CF97FD286C1D8800C251A2 /* VideoComposer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoComposer.swift; sourceTree = "<group>"; };
 		D2CF97FE286C1D8800C251A2 /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		D2CF97FF286C1D8800C251A2 /* Stream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stream.swift; sourceTree = "<group>"; };
-		D2CF980C286C282B00C251A2 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
-		D2CF980D286C282B00C251A2 /* SettingsPasteboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsPasteboard.swift; sourceTree = "<group>"; };
 		D2CF9811286C29E400C251A2 /* CoreMediaIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMediaIO.framework; path = System/Library/Frameworks/CoreMediaIO.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -77,8 +73,6 @@
 			isa = PBXGroup;
 			children = (
 				D2CF97F2286C1B1600C251A2 /* Main.swift */,
-				D2CF980C286C282B00C251A2 /* Config.swift */,
-				D2CF980D286C282B00C251A2 /* SettingsPasteboard.swift */,
 				D2CF97F1286C1B1600C251A2 /* iOSVirtualCam-Bridging-Header.h */,
 				D2CF97F5286C1D8800C251A2 /* CameraCapture.swift */,
 				D2CF97F8286C1D8800C251A2 /* CVPixelBuffer+SimpleDALPlugin.swift */,
@@ -179,10 +173,8 @@
 				D2CF97F3286C1B1600C251A2 /* Main.swift in Sources */,
 				D2CF9803286C1D8800C251A2 /* Plugin.swift in Sources */,
 				D2CF9804286C1D8800C251A2 /* CVPixelBuffer+SimpleDALPlugin.swift in Sources */,
-				D2CF980E286C282B00C251A2 /* Config.swift in Sources */,
 				D2CF9809286C1D8800C251A2 /* VideoComposer.swift in Sources */,
 				D2CF980B286C1D8800C251A2 /* Stream.swift in Sources */,
-				D2CF980F286C282B00C251A2 /* SettingsPasteboard.swift in Sources */,
 				D2CF9805286C1D8800C251A2 /* Object.swift in Sources */,
 				D2CF9806286C1D8800C251A2 /* Device.swift in Sources */,
 				D2CF9807286C1D8800C251A2 /* GPUDevice.swift in Sources */,

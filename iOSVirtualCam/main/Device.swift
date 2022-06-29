@@ -4,10 +4,10 @@ import IOKit
 class Device: Object {
     var objectID: CMIOObjectID = 0
     var streamID: CMIOStreamID = 0
-    let name = "VirtualCameraSample"
-    let manufacturer = "satoshi0212"
-    let deviceUID = "VirtualCameraSample Device"
-    let modelUID = "VirtualCameraSample Model"
+    let name = "iOSVirtualCam"
+    let manufacturer = "tmatsuda"
+    let deviceUID = "iOSVirtualCam Device"
+    let modelUID = "iOSVirtualCam Model"
     var excludeNonDALAccess: Bool = false
     var deviceMaster: Int32 = -1
 
