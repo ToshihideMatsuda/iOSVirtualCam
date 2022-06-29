@@ -3,9 +3,9 @@ import Foundation
 class Stream: Object {
     var objectID: CMIOObjectID = 0
     let name = "iOSVirtualCam"
-    let width = 1280
-    let height = 720
-    let frameRate = 30
+    let width = 1980
+    let height = 1080
+    let frameRate = 10
 
     private var sequenceNumber: UInt64 = 0
     private var queueAlteredProc: CMIODeviceStreamQueueAlteredProc?
