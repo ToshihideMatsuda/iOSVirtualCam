@@ -3,9 +3,8 @@ import Foundation
 class Stream: Object {
     var objectID: CMIOObjectID = 0
     let name = "iOSVirtualCam"
-    let width = 1980
-    let height = 1080
-    let frameRate = 10
+    public static let size = CGSize(width: 1980, height: 1080)
+    let frameRate = 25
 
     private var sequenceNumber: UInt64 = 0
     private var queueAlteredProc: CMIODeviceStreamQueueAlteredProc?
@@ -24,7 +23,7 @@ class Stream: Object {
         let error = CMVideoFormatDescriptionCreate(
             allocator: kCFAllocatorDefault,
             codecType: kCVPixelFormatType_32ARGB,
-            width: Int32(width), height: Int32(height),
+            width: Int32(Stream.size.width), height: Int32(Stream.size.height),
             extensions: nil,
             formatDescriptionOut: &formatDescription)
         guard error == noErr else {

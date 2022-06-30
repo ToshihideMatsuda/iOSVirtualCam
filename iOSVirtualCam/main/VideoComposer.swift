@@ -40,29 +40,16 @@ class VideoComposer: NSObject, AVCaptureVideoDataOutputSampleBufferDelegate {
     }
 
     func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
-        log("VideoComposer:captureOutput")
+        
         if output == cameraCapture.output {
-            log("VideoComposer:captureOutput1")
-
             guard let imageBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else { return }
-            log("VideoComposer:captureOutput2")
-            let cameraImage = CIImage(cvImageBuffer: imageBuffer)
-
-            var pixelBuffer: CVPixelBuffer?
-
-            _ = CVPixelBufferCreate(
-                kCFAllocatorDefault,
-                Int(cameraImage.extent.size.width),
-                Int(cameraImage.extent.height),
-                kCVPixelFormatType_32BGRA,
-                self.CVPixelBufferCreateOptions as CFDictionary,
-                &pixelBuffer
-            )
-
-            if let pixelBuffer = pixelBuffer {
-                context.render(cameraImage, to: pixelBuffer)
-                delegate?.videoComposer(self, didComposeImageBuffer: pixelBuffer)
-            }
+            let ciImage = CIImage(cvPixelBuffer: imageBuffer)
+            
+            // 1980x1080に収まるように縮小変換
+            guard let pixcelbuffer = ciImage.resizeInContainer(container: Stream.size)?.pixelBuffer(cgSize: Stream.size) else { return }
+            
+            delegate?.videoComposer(self, didComposeImageBuffer: pixcelbuffer)
         }
     }
+    
 }

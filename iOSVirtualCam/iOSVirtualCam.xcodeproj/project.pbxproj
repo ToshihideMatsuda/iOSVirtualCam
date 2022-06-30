@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D20662D4286D30B6006EF461 /* CIImage+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20662D3286D30B6006EF461 /* CIImage+extension.swift */; };
 		D2CF97F3286C1B1600C251A2 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF97F2286C1B1600C251A2 /* Main.swift */; };
 		D2CF9800286C1D8800C251A2 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D2CF97F4286C1D8800C251A2 /* Info.plist */; };
 		D2CF9801286C1D8800C251A2 /* CameraCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF97F5286C1D8800C251A2 /* CameraCapture.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D20662D3286D30B6006EF461 /* CIImage+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CIImage+extension.swift"; sourceTree = "<group>"; };
 		D2CF97E9286C1AC500C251A2 /* iOSVirtualCam.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSVirtualCam.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2CF97F1286C1B1600C251A2 /* iOSVirtualCam-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOSVirtualCam-Bridging-Header.h"; sourceTree = "<group>"; };
 		D2CF97F2286C1B1600C251A2 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				D2CF97FC286C1D8800C251A2 /* Property.swift */,
 				D2CF97FF286C1D8800C251A2 /* Stream.swift */,
 				D2CF97FD286C1D8800C251A2 /* VideoComposer.swift */,
+				D20662D3286D30B6006EF461 /* CIImage+extension.swift */,
 			);
 			path = main;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 				D2CF980A286C1D8800C251A2 /* Log.swift in Sources */,
 				D2CF97F3286C1B1600C251A2 /* Main.swift in Sources */,
 				D2CF9803286C1D8800C251A2 /* Plugin.swift in Sources */,
+				D20662D4286D30B6006EF461 /* CIImage+extension.swift in Sources */,
 				D2CF9809286C1D8800C251A2 /* VideoComposer.swift in Sources */,
 				D2CF980B286C1D8800C251A2 /* Stream.swift in Sources */,
 				D2CF9805286C1D8800C251A2 /* Object.swift in Sources */,
