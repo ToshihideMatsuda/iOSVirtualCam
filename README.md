@@ -28,5 +28,5 @@
 
 
 バーチャルカメラ使用動画<br>
- +  左 iPad -> 中央 Macbook -> 右 Macbook の順で画面が同期
+ +  左 iPad -(USB-typeC)-> 中央 Macbook -(Zoom)-> 右 Macbook の順で画面が同期
 ![カメラ使用後](./images/movie2.gif)
